@@ -1,0 +1,23 @@
+@import './base.css';
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+main {
+  max-width: 1080px;
+  padding: 2rem;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: hsla(35, 100%, 45%, 1);
+}
+
+@media (hover: hover) {
+  a:hover {
+    text-decoration: underline;
+  }
+}
