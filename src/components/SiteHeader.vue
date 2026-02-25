@@ -5,7 +5,7 @@
     </a>
 
     <div>
-      <h1>Roosey's House</h1>
+      <h1>The Library of Roosey</h1>
     </div>
   </header>
 </template>
