@@ -13,7 +13,7 @@ main {
 
 a {
   text-decoration: none;
-  color: hsla(35, 100%, 45%, 1);
+  color: hsl(45, 100%, 31%);
 }
 
 @media (hover: hover) {

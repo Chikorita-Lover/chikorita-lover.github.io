@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import SiteFooter from './components/SiteFooter.vue'
 import SiteHeader from './components/SiteHeader.vue'
 </script>
 
@@ -17,4 +18,6 @@ import SiteHeader from './components/SiteHeader.vue'
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
   </main>
+
+  <SiteFooter />
 </template>
