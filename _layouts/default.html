@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | The Library of Roosey</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div id="logo">
+            <a href="/">
+                <img alt="Site logo" class="logo" src="/images/logo.png" width="100" height="100" />
+            </a>
+            <div>
+                <h1>The Library of Roosey</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    <footer id="footer">
+        <div>
+            Copyright © 2026 Chikorita Lover. All rights reserved.
+        </div>
+        <div>
+            <a href="https://github.com/Chikorita-Lover/chikorita-lover.github.io" target="_blank">Source code</a>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<style>
+    footer#footer {
+        font-size: small;
+        text-align: center;
+        width: 100%;
+        border-top: 1px solid var(--color-border);
+        padding: 0.5em 0;
+    }
+
+    div#logo h1 {
+        font-weight: 500;
+        font-size: 2.6rem;
+        line-height: 1.0;
+    }
+
+    div#logo {
+        display: flex;
+        place-items: center;
+        margin: auto;
+        width: 100%;
+        max-width: 1280px;
+    }
+
+    header#header {
+        border-bottom: 1px solid var(--color-border);
+        padding: 1em 0;
+        width: 100%;
+    }
+</style>
