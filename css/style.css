@@ -1,6 +1,6 @@
 :root {
     --color-background: white;
-    --color-border: rgba(60, 60, 60, 0.12);
+    --color-border: rgba(60, 60, 60, 0.2);
     --color-accent: hsl(45, 100%, 31%);
 }
 

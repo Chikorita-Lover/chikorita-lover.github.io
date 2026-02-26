@@ -19,6 +19,12 @@
             </div>
         </div>
     </header>
+    <nav id="nav">
+        <div id="links">
+            <a href="/">Main</a>
+            <a href="/about">About</a>
+        </div>
+    </nav>
     <main>
         {{ content }}
     </main>
@@ -41,6 +47,26 @@
         width: 100%;
         border-top: 1px solid var(--color-border);
         padding: 0.5em 0;
+    }
+
+    div#links a {
+        font-size: small;
+        padding: 0.5em 1.5em;
+        margin: 0 0.3em;
+        border-left: 1px solid var(--color-border);
+        border-right: 1px solid var(--color-border);
+    }
+
+    div#links {
+        width: 100%;
+        max-width: 1280px;
+        margin: auto;
+        display: flex;
+    }
+
+    nav#nav {
+        border-bottom: 1px solid var(--color-border);
+        width: 100%;
     }
 
     div#logo h1 {
