@@ -1,0 +1,23 @@
+{
+    "name": "Caffeinated",
+    "releaseDate": "2023-06-01",
+    "tags": [
+        "Minecraft",
+        "Modding",
+        "Video games"
+    ],
+    "links": [
+        {
+            "name": "View on Modrinth",
+            "link": "https://modrinth.com/mod/caffeinated"
+        },
+        {
+            "name": "View source",
+            "link": "https://github.com/Chikorita-Lover/Caffeinated"
+        },
+        {
+            "name": "Visit wiki",
+            "link": "https://github.com/Chikorita-Lover/Caffeinated/wiki"
+        }
+    ]
+}

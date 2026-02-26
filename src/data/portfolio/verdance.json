@@ -1,0 +1,19 @@
+{
+    "name": "Verdance",
+    "releaseDate": "2024-07-31",
+    "tags": [
+        "Minecraft",
+        "Modding",
+        "Video games"
+    ],
+    "links": [
+        {
+            "name": "View on Modrinth",
+            "link": "https://modrinth.com/mod/verdance"
+        },
+        {
+            "name": "View source",
+            "link": "https://github.com/Team-Abode/verdance"
+        }
+    ]
+}

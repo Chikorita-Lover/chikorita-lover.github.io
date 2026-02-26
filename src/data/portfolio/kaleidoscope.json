@@ -1,0 +1,23 @@
+{
+    "name": "Kaleidoscope",
+    "releaseDate": "2024-11-16",
+    "tags": [
+        "Minecraft",
+        "Modding",
+        "Video games"
+    ],
+    "links": [
+        {
+            "name": "View on Modrinth",
+            "link": "https://modrinth.com/mod/kaleidoscope-mod"
+        },
+        {
+            "name": "View source",
+            "link": "https://github.com/Chikorita-Lover/Kaleidoscope"
+        },
+        {
+            "name": "Visit wiki",
+            "link": "https://github.com/Chikorita-Lover/Kaleidoscope/wiki"
+        }
+    ]
+}

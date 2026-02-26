@@ -1,0 +1,23 @@
+{
+    "name": "Coffee Add-On",
+    "releaseDate": "2021-12-22",
+    "tags": [
+        "Minecraft",
+        "Minecraft add-ons",
+        "Video games"
+    ],
+    "links": [
+        {
+            "name": "View on MCPEDL",
+            "link": "https://mcpedl.com/chikorita-lover-s-coffee-add-on/"
+        },
+        {
+            "name": "View source",
+            "link": "https://github.com/Chikorita-Lover/Coffee-Add-On"
+        },
+        {
+            "name": "Visit wiki",
+            "link": "https://github.com/Chikorita-Lover/Coffee-Add-On/wiki"
+        }
+    ]
+}
