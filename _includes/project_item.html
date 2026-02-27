@@ -1,0 +1,13 @@
+{% assign project = site.data.projects[include.id] %}
+{% assign metadata = project[1] %}
+<html>
+<a href="/projects/{{ include.id }}" style="display: flex; margin: 0.5em;" class="button">
+    <img src="/images/projects/{{ include.id }}.png" alt="{{ metadata.name }}" width=120
+        style="height: 90px; padding-right: 0.8em;" />
+    <div style="font-size: larger; font-weight: 500; margin-right: auto;">
+        {% include project_name.html project=metadata %}
+    </div>
+    <small style="color: gray;"><i>{{ metadata.releaseDate | date: "%B %Y" }}</i></small>
+</a>
+
+</html>

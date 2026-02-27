@@ -6,7 +6,8 @@ Listed below are projects I have worked on.
 
 {% assign projects = site.data.projects %}
 {% for project in projects %}
-* [{{ project[1].name }}](/projects/{{ project[0] }})
+{% assign id = project[0] %}
+{% include project_item.html id=id %}
 {% endfor %}
 
 _This site is still under construction!_
