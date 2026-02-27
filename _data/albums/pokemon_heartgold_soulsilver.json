@@ -1,0 +1,38 @@
+{
+    "name": "Pokémon HeartGold & SoulSilver",
+    "songs": [
+        {
+            "name": "New Bark Town"
+        },
+        {
+            "name": "Cherrygrove City"
+        },
+        {
+            "name": "Violet City"
+        },
+        {
+            "name": "Azalea Town"
+        },
+        {
+            "name": "Goldenrod City"
+        },
+        {
+            "name": "National Park"
+        },
+        {
+            "name": "Burned Tower"
+        },
+        {
+            "name": "Cianwood City"
+        },
+        {
+            "name": "Lavender Town"
+        },
+        {
+            "name": "Viridian Forest"
+        },
+        {
+            "name": "Pewter City"
+        }
+    ]
+}

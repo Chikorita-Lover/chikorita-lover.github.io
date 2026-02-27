@@ -1,0 +1,29 @@
+{
+    "name": "Donkey Kong 64",
+    "songs": [
+        {
+            "name": "DK Isle"
+        },
+        {
+            "name": "Jungle Japes"
+        },
+        {
+            "name": "Angry Aztec"
+        },
+        {
+            "name": "Frantic Factory"
+        },
+        {
+            "name": "Gloomy Galleon"
+        },
+        {
+            "name": "Crystal Caves"
+        },
+        {
+            "name": "Creepy Castle"
+        },
+        {
+            "name": "Snide's HQ"
+        }
+    ]
+}

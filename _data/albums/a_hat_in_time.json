@@ -1,0 +1,26 @@
+{
+    "name": "A Hat in Time",
+    "songs": [
+        {
+            "name": "Main Theme"
+        },
+        {
+            "name": "New Adventure"
+        },
+        {
+            "name": "Mafia Town Is Asleep"
+        },
+        {
+            "name": "Mafia HQ"
+        },
+        {
+            "name": "Scootin' Through Subcon Forest"
+        },
+        {
+            "name": "The Subcon Caves"
+        },
+        {
+            "name": "The Windmill Peak"
+        }
+    ]
+}
