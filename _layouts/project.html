@@ -1,0 +1,26 @@
+---
+layout: default
+collection: projects
+---
+{% assign project = site.data.projects[page.id] %}
+<div style="display: flex; width: 100%;">
+    <div style="margin-right: auto;">
+        <h1>{{ project.name }}</h1>
+        <p>
+            <small>In: {{ project.tags | join: ", " }}</small>
+        </p>
+        <p>
+            <small><i>Released {{ project.releaseDate }}</i></small>
+        </p>
+
+        {{ content }}
+    </div>
+    <div style="display: grid; padding: 0 1em; border-left: 1px solid var(--color-border)">
+        <img src="/images/projects/{{ page.id }}.png" alt="{{ project.name }}" width=300 style="border: 1px solid var(--color-border)" />
+        <div style="text-align: center; display: grid;">
+            {% for link in project.links %}
+            <a href="{{ link.link }}" target="_blank" style="margin: 0.5em;">{{ link.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
