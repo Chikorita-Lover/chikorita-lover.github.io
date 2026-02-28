@@ -1,0 +1,15 @@
+{% assign project_hashes = site.data.projects %}
+{% assign projects = "" | split: "" %}
+{% for project_hash in project_hashes %}
+    {% assign projects = projects | push: project_hash[1] %}
+{% endfor %}
+{% assign projects = projects | sort: "releaseDate" | reverse %}
+{% assign limit = include.limit | default: Infinity %}
+{% for project in projects limit: limit %}
+    {% for project_hash in project_hashes %}
+        {% if project_hash[1] == project %}
+            {% assign id = project_hash[0] %}
+        {% endif %}
+    {% endfor %}
+    {% include project_item.html id=id %}
+{% endfor %}
