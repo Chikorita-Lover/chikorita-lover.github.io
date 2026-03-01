@@ -1,15 +1,26 @@
 {% assign project_hashes = site.data.projects %}
 {% assign projects = "" | split: "" %}
 {% for project_hash in project_hashes %}
-    {% assign projects = projects | push: project_hash[1] %}
+{% assign projects = projects | push: project_hash[1] %}
 {% endfor %}
 {% assign projects = projects | sort: "releaseDate" | reverse %}
 {% assign limit = include.limit | default: Infinity %}
-{% for project in projects limit: limit %}
+{% assign columns = include.columns | at_least: 1 %}
+{% assign template_columns = "" %}
+{% for i in (1..columns) %}
+{% assign template_columns = template_columns | append: "1fr " %}
+{% endfor %}
+<html>
+<div style="display: grid; grid-template-columns: {{ template_columns }};">
+    {% for project in projects limit: limit %}
     {% for project_hash in project_hashes %}
-        {% if project_hash[1] == project %}
-            {% assign id = project_hash[0] %}
-        {% endif %}
+    {% if project_hash[1] == project %}
+    {% assign id = project_hash[0] %}
+    {% break %}
+    {% endif %}
     {% endfor %}
     {% include project_item.html id=id %}
-{% endfor %}
+    {% endfor %}
+</div>
+
+</html>
