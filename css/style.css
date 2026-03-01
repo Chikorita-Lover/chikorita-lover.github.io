@@ -1,5 +1,6 @@
 :root {
     --color-background: white;
+    --color-background-mute: hsl(0, 0%, 90%);
     --color-border: rgba(60, 60, 60, 0.2);
     --color-accent: hsl(45, 100%, 31%);
 }
@@ -31,4 +32,10 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+small.tag {
+    background-color: var(--color-background-mute);
+    color: black;
+    padding: 0.1em 0.5em;
 }
