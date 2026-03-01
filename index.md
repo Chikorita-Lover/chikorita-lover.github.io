@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 # Latest projects
 <div>
-{% include project_list.html columns=2 limit=2 %}
+{% include project-list.html columns=2 limit=2 %}
 <a href="/projects/" style="display: block; margin: 0 auto; text-align: center;" class="button">View all projects</a>
 
 </div>

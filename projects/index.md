@@ -4,6 +4,6 @@ title: Projects
 ---
 Listed below are projects I have worked on.
 
-{% include project_list.html %}
+{% include project-list.html %}
 
 _This site is still under construction!_

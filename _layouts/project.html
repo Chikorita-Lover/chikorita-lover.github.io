@@ -5,8 +5,8 @@ collection: projects
 {% assign project = site.data.projects[page.id] %}
 <div style="display: flex; width: 100%;">
     <div style="margin-right: auto;">
-        <div>{% include project_tags.html project=project %}</div>
-        <h1>{% include project_name.html project=project %}</h1>
+        <div>{% include project-tags.html project=project %}</div>
+        <h1>{% include project-name.html project=project %}</h1>
         <p>
             <small><i>Released {{ project.releaseDate | date: "%B %d, %Y" }}</i></small>
         </p>
