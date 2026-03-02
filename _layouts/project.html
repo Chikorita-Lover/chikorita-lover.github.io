@@ -22,6 +22,11 @@ collection: projects
         </div>
     </section>
 </div>
+{% if project.screenshots %}
+<section style="width: 100%; border-top: 1px solid var(--color-border)">
+    {% include gallery.html images=project.screenshots %}
+</section>
+{% endif %}
 
 <style>
     section {

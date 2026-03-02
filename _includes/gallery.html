@@ -1,0 +1,7 @@
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;">
+    {% for image in include.images %}
+    <a href="{{ image }}" target="_blank" style="margin: auto;">
+        <img src="{{ image }}" width="240" style="border: 1px solid var(--color-border);">
+    </a>
+    {% endfor %}
+</div>
