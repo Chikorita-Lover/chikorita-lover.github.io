@@ -12,3 +12,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <a href="/projects/" style="display: block; margin: 0 auto; text-align: center;" class="button">View all projects</a>
 
 </div>
+<br />

@@ -28,7 +28,7 @@ header#header {
 
 main {
     max-width: 1080px;
-    padding: 1em 2em;
+    padding: 0 2em;
     margin: auto;
 }
 
