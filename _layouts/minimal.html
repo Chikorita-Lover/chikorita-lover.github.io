@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | The Library of Roosey</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="/" id="logo">
+            <img alt="Site logo" class="logo" src="/images/logo-small.png" width="32" />
+            <h1>The Library of Roosey</h1>
+        </a>
+    </header>
+    {% include common/nav.html %}
+    <main>
+        {{ content }}
+    </main>
+    {% include common/footer.html %}
+</body>
+
+</html>
+
+<style>
+    header#header {
+        padding: 0.5em 0;
+    }
+
+    #logo {
+        color: black;
+    }
+
+    #logo h1 {
+        font-weight: 500;
+        font-size: 1.3em;
+        line-height: 1.0;
+        padding-left: 0.5em;
+    }
+</style>
