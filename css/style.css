@@ -21,9 +21,16 @@ body {
 }
 
 header#header {
-    background-image:
-        linear-gradient(var(--color-background-overlay), var(--color-background-overlay)),
-        url("/images/site-banner.png");
+    border-bottom: 1px solid var(--color-border);
+    width: 100%;
+}
+
+#logo {
+    display: flex;
+    place-items: center;
+    margin: auto;
+    max-width: 1280px;
+    text-decoration: none;
 }
 
 main {
@@ -39,6 +46,16 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+a.button {
+    padding: 0.5em;
+    border: 1px solid var(--color-border);
+}
+
+a.button:hover {
+    text-decoration: none;
+    border-color: var(--color-accent);
 }
 
 small.tag {
