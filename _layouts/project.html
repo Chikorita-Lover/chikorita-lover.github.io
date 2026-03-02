@@ -3,8 +3,8 @@ layout: default
 collection: projects
 ---
 {% assign project = site.data.projects[page.id] %}
-<div style="display: flex; width: 100%;">
-    <section style="padding-right: 1em; margin-right: auto;">
+<div id="top">
+    <section id="summary">
         <div>{% include project-tags.html project=project %}</div>
         <h1>{% include project-name.html project=project %}</h1>
         <p>
@@ -12,9 +12,8 @@ collection: projects
         </p>
         {{ content }}
     </section>
-    <section style="padding-left: 1em; border-left: 1px solid var(--color-border)">
-        <img src="/images/projects/{{ page.id }}.png" alt="{{ project.name }}" width=300
-            style="border: 1px solid var(--color-border)" />
+    <section id="info">
+        <img src="/images/projects/{{ page.id }}.png" alt="{{ project.name }}" width=300 />
         <div style="text-align: center; display: grid;">
             {% for link in project.links %}
             <a href="{{ link.link }}" target="_blank" style="margin-top: 0.7em;" class="button">{{ link.name }}</a>
@@ -31,5 +30,46 @@ collection: projects
 <style>
     section {
         padding: 1em 0;
+    }
+
+    #top {
+        display: flex;
+        width: 100%;
+    }
+
+    #summary {
+        padding-right: 1em;
+        margin-right: auto;
+    }
+
+    #info {
+        text-align: center;
+        padding-left: 1em;
+        border-left: 1px solid var(--color-border);
+    }
+
+    #info img {
+        border: 1px solid var(--color-border);
+    }
+
+    @media screen and (max-width: 800px) {
+        #top {
+            display: block;
+        }
+
+        #summary {
+            padding-right: 0;
+            margin-right: 0;
+        }
+
+        #info {
+            padding-left: 0;
+            border-left: 0;
+            border-top: 1px solid var(--color-border);
+        }
+
+        #info img {
+            max-width: 100%;
+        }
     }
 </style>

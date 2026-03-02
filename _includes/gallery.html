@@ -1,7 +1,42 @@
-<div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;">
+<div class="gallery">
     {% for image in include.images %}
-    <a href="{{ image }}" target="_blank" style="margin: auto;">
-        <img src="{{ image }}" width="240" style="border: 1px solid var(--color-border);">
+    <a href="{{ image }}" target="_blank">
+        <img src="{{ image }}" width="240">
     </a>
     {% endfor %}
 </div>
+
+<style>
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .gallery a {
+        margin: auto;
+        padding: 1em;
+    }
+
+    .gallery img {
+        border: 1px solid var(--color-border);
+        max-width: 100%;
+    }
+
+    @media screen and (max-width: 1100px) {
+        .gallery {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .gallery {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .gallery {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
