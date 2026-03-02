@@ -23,5 +23,9 @@
             "name": "Visit wiki",
             "link": "https://github.com/Chikorita-Lover/Caffeinated/wiki"
         }
+    ],
+    "screenshots": [
+        "/images/screenshots/caffeinated-0.png",
+        "/images/screenshots/caffeinated-1.png"
     ]
 }

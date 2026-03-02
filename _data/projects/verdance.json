@@ -19,5 +19,11 @@
             "name": "View source",
             "link": "https://github.com/Team-Abode/verdance"
         }
+    ],
+    "screenshots": [
+        "/images/screenshots/verdance-0.png",
+        "/images/screenshots/verdance-1.png",
+        "/images/screenshots/verdance-2.png",
+        "/images/screenshots/verdance-3.png"
     ]
 }

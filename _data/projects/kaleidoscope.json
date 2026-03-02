@@ -23,5 +23,11 @@
             "name": "Visit wiki",
             "link": "https://github.com/Chikorita-Lover/Kaleidoscope/wiki"
         }
+    ],
+    "screenshots": [
+        "/images/screenshots/kaleidoscope-0.png",
+        "/images/screenshots/kaleidoscope-1.png",
+        "/images/screenshots/kaleidoscope-2.png",
+        "/images/screenshots/kaleidoscope-3.png"
     ]
 }

@@ -19,5 +19,11 @@
             "name": "Visit wiki",
             "link": "https://github.com/Chikorita-Lover/Coffee-Add-On/wiki"
         }
+    ],
+    "screenshots": [
+        "/images/screenshots/coffee-add-on-0.png",
+        "/images/screenshots/coffee-add-on-1.png",
+        "/images/screenshots/coffee-add-on-2.png",
+        "/images/screenshots/coffee-add-on-3.png"
     ]
 }
