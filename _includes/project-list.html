@@ -11,7 +11,7 @@
 {% assign template_columns = template_columns | append: "1fr " %}
 {% endfor %}
 <html>
-<div style="display: grid; grid-template-columns: {{ template_columns }};">
+<div style="display: grid; grid-template-columns: {{ template_columns }};" class="project_list">
     {% for project in projects limit: limit %}
     {% for project_hash in project_hashes %}
     {% if project_hash[1] == project %}
@@ -24,3 +24,11 @@
 </div>
 
 </html>
+
+<style>
+    @media screen and (max-width: 1080px) {
+        .project_list {
+            grid-template-columns: 1fr !important;
+        }
+    }
+</style>

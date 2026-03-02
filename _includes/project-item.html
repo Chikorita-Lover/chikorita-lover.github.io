@@ -1,17 +1,43 @@
 {% assign project = site.data.projects[include.id] %}
 <html>
-<a href="/projects/{{ include.id }}" style="display: flex; margin: 0.5em;" class="button">
-    <img src="/images/projects/{{ include.id }}.png" alt="{{ project.name }}" width=120
-        style="height: 90px; padding-right: 0.8em;" />
-    <div style="margin-right: auto;">
-        <div style="font-size: larger; font-weight: 500;">
+<a href="/projects/{{ include.id }}" style="max-width: 100%; margin: 0.5em;" class="project_item button">
+    <img src="/images/projects/{{ include.id }}.png" alt="{{ project.name }}" width=120 />
+    <div class="project_header">
+        <div style="margin-right: auto; font-size: larger; font-weight: 500;">
             {% include project-name.html project=project %}
         </div>
-        <div>
-            {% include project-tags.html project=project %}
-        </div>
+        <small style="color: gray; text-align: right;"><i>{{ project.releaseDate | date: "%B %Y" }}</i></small>
     </div>
-    <small style="color: gray; text-align: right;"><i>{{ project.releaseDate | date: "%B %Y" }}</i></small>
+    <div class="project_tags">
+        {% include project-tags.html project=project %}
+    </div>
 </a>
 
 </html>
+
+<style>
+    .project_item img {
+        float: left;
+        height: 90px;
+        padding-right: 0.8em;
+    }
+
+    a .project_header {
+        display: flex;
+        margin-right: auto;
+    }
+
+    @media screen and (max-width: 500px) {
+        .project_item img {
+            float: none;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        a .project_header {
+            display: block;
+        }
+    }
+</style>
