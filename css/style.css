@@ -1,13 +1,26 @@
 :root {
     --color-background: white;
     --color-background-mute: hsl(0, 0%, 90%);
-    --color-background-overlay: hsla(45, 50%, 40%, 0.92);
     --color-border: rgba(60, 60, 60, 0.2);
+    --color-border-accent: hsla(45, 50%, 40%, 0.92);
     --color-accent: hsl(45, 100%, 31%);
+    --color-text: black;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: hsl(0, 0%, 15%);
+        --color-background-mute: hsl(0, 0%, 30%);
+        --color-border: rgba(195, 195, 195, 0.2);
+        --color-accent: hsl(45, 80%, 46%);
+        --color-text: hsl(0, 0%, 90%);
+    }
 }
 
 body {
     margin: 0 auto;
+    color: var(--color-text);
+    background-color: var(--color-background);
     font-family:
         'Segoe UI',
         Roboto,
@@ -55,11 +68,11 @@ a.button {
 
 a.button:hover {
     text-decoration: none;
-    border-color: var(--color-accent);
+    border-color: var(--color-border-accent);
 }
 
 small.tag {
     background-color: var(--color-background-mute);
-    color: black;
+    color: var(--color-text);
     padding: 0.1em 0.5em;
 }
