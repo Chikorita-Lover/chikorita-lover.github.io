@@ -1,0 +1,8 @@
+<html>
+<div class="{{ include.class }}" style="display: flex; {{ include.style }}">
+    {% for tag in include.tags %}
+    <div><small class="tag">{{ tag }}</small></div>
+    {% endfor %}
+</div>
+
+</html>

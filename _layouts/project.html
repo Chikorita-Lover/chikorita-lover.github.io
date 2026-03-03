@@ -5,7 +5,7 @@ collection: projects
 {% assign project = site.data.projects[page.id] %}
 <div id="top">
     <section id="summary">
-        <div>{% include project-tags.html project=project %}</div>
+        {% include tag-list.html tags=project.tags %}
         <h1>{% include project-name.html project=project %}</h1>
         <p>
             <small><i>Released {{ project.releaseDate | date: "%B %d, %Y" }}</i></small>

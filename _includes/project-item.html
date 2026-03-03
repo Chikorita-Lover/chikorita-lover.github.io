@@ -8,9 +8,7 @@
         </div>
         <small style="color: gray; text-align: right;"><i>{{ project.releaseDate | date: "%B %Y" }}</i></small>
     </div>
-    <div class="project_tags">
-        {% include project-tags.html project=project %}
-    </div>
+    {% include tag-list.html class="project_tags" tags=project.tags %}
 </a>
 
 </html>
