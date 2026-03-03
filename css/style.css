@@ -76,3 +76,33 @@ small.tag {
     color: var(--color-text);
     padding: 0.1em 0.5em;
 }
+
+#image-preview {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    cursor: zoom-out;
+}
+
+#image-preview img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 90%;
+    max-height: 90%;
+    transform: translate(-50%, -50%);
+    animation: fadein 0.25s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

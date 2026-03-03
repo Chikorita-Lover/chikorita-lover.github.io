@@ -13,7 +13,7 @@ collection: projects
         {{ content }}
     </section>
     <section id="info">
-        <img src="/images/projects/{{ page.id }}.png" alt="{{ project.name }}" width=300 />
+        <img src="/images/projects/{{ page.id }}.png" alt="{{ project.name }}" width=300 onclick="enlargeImage()" />
         <div style="text-align: center; display: grid;">
             {% for link in project.links %}
             <a href="{{ link.link }}" target="_blank" style="margin-top: 0.7em;" class="button">{{ link.name }}</a>
@@ -50,6 +50,7 @@ collection: projects
 
     #info img {
         border: 1px solid var(--color-border);
+        cursor: pointer;
     }
 
     @media screen and (max-width: 800px) {
