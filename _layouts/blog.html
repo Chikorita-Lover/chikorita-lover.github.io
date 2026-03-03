@@ -1,0 +1,7 @@
+---
+layout: default
+---
+{% include tag-list.html style="margin-top: 1em;" tags=page.tags %}
+<h1>{{ page.title }}</h1>
+<i><small>Published {{ page.date | date: "%B %d, %Y" }}</small></i>
+{{ content }}
