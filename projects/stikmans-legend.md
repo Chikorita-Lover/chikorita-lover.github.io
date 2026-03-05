@@ -2,6 +2,7 @@
 layout: project
 title: Stikman's Legend
 id: stikmans-legend
+video_id: f9chdieBY_s
 ---
 The last _Stikman_ game released on Scratch, _Stikman's Legend_ is a top-down action-adventure game that tells an alternate story to that of _Stikman Scratch_. Explore the wilds of Mount Madeline as Stikman as he seeks the Golden Sticks to escape to Ormali City!
 

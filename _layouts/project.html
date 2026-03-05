@@ -21,6 +21,11 @@ collection: projects
         </div>
     </section>
 </div>
+{% if page.video_id %}
+<section style="border-top: 1px solid var(--color-border); text-align: center;">
+    <iframe width="640" src="https://www.youtube.com/embed/{{ page.video_id }}" style="max-width: 100%; aspect-ratio: 16 / 9;"></iframe>
+</section>
+{% endif %}
 {% if project.screenshots %}
 <section style="width: 100%; border-top: 1px solid var(--color-border)">
     {% include gallery.html images=project.screenshots %}
