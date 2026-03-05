@@ -1,0 +1,52 @@
+{
+    "name": "Chikorita Lover",
+    "alias": "Calvin Gardels",
+    "email": "cjgardels@gmail.com",
+    "links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/Chikorita-Lover",
+            "icon": "/images/icons/github.svg"
+        },
+        {
+            "name": "Scratch",
+            "url": "https://scratch.mit.edu/users/Chikorita_Lover/",
+            "icon": "/images/icons/scratch.svg"
+        },
+        {
+            "name": "Twitter / X",
+            "url": "https://twitter.com/ChikoritaL",
+            "icon": "/images/icons/x.svg"
+        },
+        {
+            "name": "Tumblr",
+            "url": "https://www.tumblr.com/chikorita-lover",
+            "icon": "/images/icons/tumblr.svg"
+        },
+        {
+            "name": "Discord",
+            "url": "https://discord.com/users/487020064579649556",
+            "icon": "/images/icons/discord.svg"
+        },
+        {
+            "name": "Fandom",
+            "url": "https://community.fandom.com/wiki/User:Chikorita_Lover",
+            "icon": "/images/icons/fandom.svg"
+        },
+        {
+            "name": "Modrinth",
+            "url": "https://modrinth.com/user/Chikorita-Lover",
+            "icon": "/images/icons/modrinth.svg"
+        },
+        {
+            "name": "CurseForge",
+            "url": "https://www.curseforge.com/members/chikorita_lover",
+            "icon": "/images/icons/curseforge.svg"
+        },
+        {
+            "name": "YouTube",
+            "url": "https://www.youtube.com/channel/UC6EX3bNXmluMRr7XbY8GJeg",
+            "icon": "/images/icons/youtube.svg"
+        }
+    ]
+}

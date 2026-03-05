@@ -1,0 +1,69 @@
+---
+layout: default
+---
+{% assign contact = site.data.contact %}
+<div id="content">
+    {{ content }}
+</div>
+<div id="info" style="align-items: center; gap: 2em;">
+    <img src="{{ page.image }}" alt="Profile" width=150 height=150 style="border-radius: 50%;" />
+    <div style="width: 100%;">
+        <div style="font-size: xx-large; font-weight: bold;">
+            {{ contact.name }}
+        </div>
+        <div>
+            {{ contact.alias }} | <a href="mailto:{{ contact.email }}" target="_blank">{{ contact.email }}</a>
+        </div>
+        <div id="link-grid" style="display: grid; gap: 0.7em; padding-top: 1.3em;">
+            {% for link in contact.links %}
+            <a href="{{ link.url }}" target="_blank"
+                style="text-align: left; padding-left: 1.8em; background-image: url('{{ link.icon }}'); background-position: 0 50%; background-repeat: no-repeat; background-size: 1.2em;">
+                {{ link.name }}
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<style>
+    #info {
+        display: flex;
+        padding: 2em 0;
+        border-top: 1px solid var(--color-border);
+    }
+
+    #link-grid {
+        margin: 0 auto;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    @media screen and (max-width: 900px) {
+        #link-grid {
+            grid-template-columns: auto auto auto;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        #link-grid {
+            grid-template-columns: auto auto;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        #info {
+            display: block;
+            text-align: center;
+        }
+
+        #link-grid {
+            width: 80%;
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        #link-grid {
+            width: 50%;
+            grid-template-columns: auto;
+        }
+    }
+</style>
