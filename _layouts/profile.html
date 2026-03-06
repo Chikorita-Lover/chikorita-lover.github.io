@@ -18,7 +18,7 @@ layout: default
             {% for link in contact.links %}
             <a href="{{ link.url }}" target="_blank"
                 style="text-align: left; padding-left: 1.8em; background-image: url('{{ link.icon }}'); background-position: 0 50%; background-repeat: no-repeat; background-size: 1.2em;">
-                {{ link.name }}
+                <span>{{ link.name }}</span>
             </a>
             {% endfor %}
         </div>
@@ -64,6 +64,16 @@ layout: default
         #link-grid {
             width: 50%;
             grid-template-columns: auto;
+        }
+    }
+
+    @media screen and (prefers-color-scheme: dark) {
+        #link-grid a {
+            filter: invert();
+        }
+
+        #link-grid a span {
+            filter: invert();
         }
     }
 </style>
