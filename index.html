@@ -1,0 +1,21 @@
+---
+layout: default
+title: Main
+---
+{% assign post = site.posts[0] %}
+{% if post %}
+<div style="border: 1px solid var(--color-border); padding: 1em 2em; margin-top: 2em; margin-bottom: 1em;">
+    {% include tag-list.html style="margin-top: 1em;" tags=post.tags %}
+    <h2>Latest post: <a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <i><small>Published {{ post.date | date: "%B %d, %Y" }}</small></i>
+    {{ post.excerpt }}
+    <a href="{{ post.url }}" class="button" style="display: block; text-align: center;">View full post</a>
+</div>
+<a href="/blog" class="button" style="display: block; text-align: center;">View all posts</a>
+{% endif %}
+<div style="margin-bottom: 1em;">
+    <h2>Latest projects</h2>
+    {% include project-list.html columns=2 limit=2 %}
+    <a href="/projects/" style="display: block; margin: 0 auto; text-align: center;" class="button">View all
+        projects</a>
+</div>
