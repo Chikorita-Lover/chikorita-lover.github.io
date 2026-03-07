@@ -1,7 +1,9 @@
 {% assign project = site.data.projects[include.id] %}
 <html>
 <a href="/projects/{{ include.id }}" style="max-width: 100%; margin: 0.5em;" class="project_item button">
-    <img src="/images/projects/{{ include.id }}.png" alt="{{ project.name }}" width=120 />
+    {% assign default_thumb = "/images/projects/thumbnails/" | append: include.id | append: ".png" %}
+    {% assign thumbnail = project.thumbnail | default: default_thumb %}
+    <img src="{{ thumbnail }}" alt="{{ project.name }}" width=120 />
     <div class="project_header">
         <div style="margin-right: auto; font-size: larger; font-weight: 500;">
             {% include project-name.html project=project %}
