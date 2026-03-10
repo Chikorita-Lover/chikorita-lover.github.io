@@ -7,6 +7,9 @@
     --color-border-accent: hsla(45, 50%, 40%, 0.92);
     --color-accent: hsl(45, 100%, 31%);
     --color-text: black;
+
+    background-image: linear-gradient(var(--color-footer)),
+        url("/images/site-background.png");
 }
 
 @media (prefers-color-scheme: dark) {
