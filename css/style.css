@@ -4,15 +4,14 @@
     --color-background: white;
     --color-background-mute: hsl(0, 0%, 90%);
     --color-background-mute2: hsl(0, 0%, 80%);
-    --color-background-image: hsl(0, 0%, 15%, 90%);
-    --color-footer: hsl(0, 0%, 15%);
+    --color-footer: hsl(0, 0%, 28%);
     --color-border: rgba(60, 60, 60, 0.2);
     --color-border-accent: hsla(45, 50%, 40%, 0.92);
     --color-accent: hsl(45, 100%, 31%);
     --color-text: black;
 
-    background-image: linear-gradient(var(--color-background-image)),
-        url("/images/site-background.png");
+    background-image: url("/images/site-background.png");
+    background-color: #e5dfda;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,11 +19,13 @@
         --color-background: hsl(0, 0%, 15%);
         --color-background-mute: hsl(0, 0%, 30%);
         --color-background-mute2: hsl(0, 0%, 40%);
-        --color-background-image: hsl(0, 0%, 5%, 90%);
         --color-footer: hsl(0, 0%, 5%);
         --color-border: rgba(195, 195, 195, 0.2);
         --color-accent: hsl(45, 80%, 46%);
         --color-text: hsl(0, 0%, 90%);
+
+        background-image: url("/images/site-background-dark.png");
+        background-color: #25211a;
     }
 }
 
@@ -58,6 +59,7 @@ header#header {
 
 main {
     background-color: var(--color-background);
+    border: 1px solid var(--color-border);
 }
 
 .body-section {
