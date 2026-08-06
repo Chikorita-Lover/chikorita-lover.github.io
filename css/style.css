@@ -1,3 +1,5 @@
+@import "tags.css";
+
 :root {
     --color-background: white;
     --color-background-mute: hsl(0, 0%, 90%);
