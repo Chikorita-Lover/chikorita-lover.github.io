@@ -1,0 +1,16 @@
+<html>
+<div style="display: grid; grid-template-columns: 1fr 1fr;" class="project_list">
+    {% for project_id in include.project.suggested %}
+    {% include project-item.html id=project_id %}
+    {% endfor %}
+</div>
+
+</html>
+
+<style>
+    @media screen and (max-width: 1080px) {
+        .project_list {
+            grid-template-columns: 1fr !important;
+        }
+    }
+</style>
