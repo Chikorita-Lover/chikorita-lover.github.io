@@ -57,10 +57,13 @@ header#header {
 }
 
 main {
+    background-color: var(--color-background);
+}
+
+.body-section {
     max-width: 1080px;
     padding: 0.5em 5em;
     margin: 1em auto;
-    background-color: var(--color-background);
     border-radius: 3px;
 }
 
@@ -121,13 +124,13 @@ a.button:hover {
 }
 
 @media screen and (max-width: 1300px) {
-    main {
+    .body-section {
         margin: 1em 2em;
     }
 }
 
 @media screen and (max-width: 800px) {
-    main {
+    .body-section {
         padding: 0.5em 1em;
         margin: 1em;
     }
